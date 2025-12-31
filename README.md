@@ -1,172 +1,125 @@
-# 🎧 iPod Classic UI – React
+# iPod Classic UI (React)
 
-A **classic iPod-style UI clone** built using **React**, featuring a **rotational wheel navigation**, dynamic menus, and music playback — inspired by the original Apple iPod experience.
-
-This project focuses on **event-driven UI logic**, **gesture handling**, and **state-based screen navigation**, rather than simple CRUD or form-based interfaces.
+A classic **iPod-style user interface clone** built using **React**, featuring **rotational wheel navigation**, dynamic menus, and music playback.  
+The project focuses on **gesture-based interaction**, **state-driven UI rendering**, and a **component-based architecture** inspired by the original Apple iPod.
 
 ---
 
-## 📸 Preview
+## Live Demo
+[View Live iPod Demo](https://ipod-react-six.vercel.app/)
 
-> _(Add a screenshot of the app UI here)_
+---
 
-```md
-![iPod UI Preview](preview/ipod-ui.png)
-🚀 Features
-🎡 Rotational Wheel Navigation
+## Preview
 
-Clockwise & anti-clockwise wheel rotation
+![iPod UI Preview](preview/Screenshot%20(165).png)
 
-Menu item selection based on rotation direction
+---
 
-📂 Dynamic Menu System
+## Features
 
-Side Menu (Coverflow, Music, Games, Settings)
+- Rotational wheel navigation with clockwise and anti-clockwise support  
+- Dynamic side menu navigation  
+  - Coverflow  
+  - Music  
+  - Games  
+  - Settings  
+- Nested music menu  
+  - All Songs  
+  - Artists  
+  - Albums  
+- Music playback using HTML5 Audio  
+- Active menu highlighting  
+- State-driven screen rendering  
+- Classic iPod look and feel  
 
-Nested Music Menu (All Songs, Artists, Albums)
+---
 
-🎵 Music Playback
+## React Concepts Used
 
-Audio playback using HTML5 <audio> element
+- Class Components for central state management  
+- Functional Components for modular UI  
+- useEffect hook for menu highlighting and DOM synchronization  
+- Conditional rendering based on application state  
+- Props-based component communication  
 
-Song thumbnail and metadata display
+---
 
-🧭 State-Driven Screen Rendering
+## Gesture & Event Handling
 
-Centralized state management
+- ZingTouch library used for detecting wheel rotation gestures  
+- Gesture-based navigation similar to real iPod behavior  
+- Controlled DOM manipulation where required for gesture handling  
 
-Smooth transitions between screens
+---
 
-🖥️ Classic iPod-style UI
+## Project Architecture
 
-Authentic menu layout
+- App  
+  - Central controller managing global state and navigation logic  
 
-Highlighted active menu items
+- Screen  
+  - Responsible for rendering the active screen  
 
-⚛️ React Concepts Used
-Class Components
+- Controls  
+  - Handles wheel rotation, menu button, and OK button actions  
 
-State management using constructor
+- Menu Components  
+  - SideMenu  
+  - MusicMenu  
 
-Event handler methods
+- Content Components  
+  - Coverflow  
+  - Music  
+  - AllSongs  
+  - Artists  
+  - Albums  
+  - Games  
+  - Settings  
 
-Props-based data flow
+---
 
-Functional Components
+## Tech Stack
 
-Modular UI components
+- React  
+- JavaScript (ES6+)  
+- ZingTouch  
+- HTML5 Audio API  
+- CSS  
 
-Reusable menu and screen components
+---
 
-React Hooks
+## Run Locally
 
-useEffect() for:
+1. Clone the repository  
+   git clone https://github.com/akhilBharti510/ipod-react.git  
 
-Menu highlighting
+2. Navigate to the project directory  
+   cd ipod-react  
 
-DOM synchronization
+3. Install dependencies  
+   npm install  
 
-Conditional Rendering
+4. Start the development server  
+   npm start  
 
-Screen switching based on application state
+---
 
-🔄 Gesture & Event Handling
-ZingTouch Library
+## Learning Outcomes
 
-Used for detecting rotational gestures on the wheel
+- Implemented gesture-based navigation in React  
+- Managed complex UI state centrally  
+- Combined declarative React patterns with imperative DOM logic  
+- Built an interactive, non-form-based UI  
 
-Enables real-world iPod-like interaction
+---
 
-DOM Interaction
+## Author
 
-Controlled usage of querySelector and classList
-
-Necessary for gesture-based UI logic
-
-⚠️ Direct DOM manipulation is intentionally used here due to gesture-based interactions that are not easily handled through standard React synthetic events.
-
-🧩 Project Architecture
-App
-Central controller managing global state and navigation logic
-
-Screen
-Responsible for rendering the active screen
-
-Controls
-Handles wheel rotation, menu button, and OK button interactions
-
-Menu Components
-
-SideMenu
-
-MusicMenu
-
-Content Components
-
-Coverflow
-
-Music
-
-AllSongs
-
-Artists
-
-Albums
-
-Games
-
-Settings
-
-🛠️ Tech Stack
-React
-
-JavaScript (ES6+)
-
-ZingTouch (Gesture detection)
-
-HTML5 Audio API
-
-CSS
-
-⚙️ Run Locally
-Clone the repository
-
-bash
-Copy code
-git clone https://github.com/akhilBharti510/ipod-react.git
-Navigate to the project folder
-
-bash
-Copy code
-cd ipod-react
-Install dependencies
-
-bash
-Copy code
-npm install
-Start the development server
-
-bash
-Copy code
-npm start
-🌐 Live Demo
-(Will be added after deployment)
-
-arduino
-Copy code
-https://ipod-react.vercel.app
-📌 Learning Outcomes
-Handling complex UI state in React
-
-Gesture-based event management
-
-Mixing declarative React logic with imperative DOM handling
-
-Designing non-form-based interactive UIs
-
-👤 Author
-Akhil Bharti
-Frontend Developer
+Akhil Bharti  
+Frontend Developer  
 GitHub: https://github.com/akhilBharti510
 
-⭐ If you like this project, feel free to star the repository!
+---
+
+⭐ If you like this project, feel free to star the repository.
